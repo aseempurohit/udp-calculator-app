@@ -8,8 +8,8 @@ RUN mkdir /app
 COPY udp-server.py /app
 COPY calculator_common.py /app
 WORKDIR /app
-ENV http_proxy ""
-ENV https_proxy ""
+#ENV http_proxy ""
+#ENV https_proxy ""
 ENTRYPOINT ["/usr/bin/python"]
 CMD ["udp-server.py"]
 EXPOSE "10000"
